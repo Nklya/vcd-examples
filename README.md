@@ -1,4 +1,4 @@
-# VMware vCloud Director (VCD) control examples with Terraform and Ansible
+# Control VMware vCloud Director (VCD) with Terraform and Ansible examples.
 
 ## Content
 * `Terraform` - terraform example
