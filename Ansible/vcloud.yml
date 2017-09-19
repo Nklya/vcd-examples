@@ -1,0 +1,25 @@
+---
+- hosts: localhost
+  gather_facts: False
+
+  vars:
+    instance_name: Env-01
+
+  tasks:
+    - name: Create vApp
+      vca_vapp:
+        host: https://vcloud.host.com
+        org: vms
+        vapp_name: "{{ instance_name }}"
+        vm_cpus: 2
+        vm_memory: 2048
+        service_type: vcd
+        state: present
+        catalog_name: Boxes
+        template_name: CENTOS-74
+        vdc_name: vms-vdc
+        network_name: vcloud_default
+        network_mode: static
+        username: user
+        password: pass
+        verify_certs: False

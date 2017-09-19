@@ -1,0 +1,7 @@
+vcd_user = "user"
+
+vcd_pass = "pass"
+
+vcd_org = "vms"
+
+vcd_url = "https://vcloud.host.com/api"
