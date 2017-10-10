@@ -13,6 +13,7 @@
         vapp_name: "{{ instance_name }}"
         vm_cpus: 2
         vm_memory: 2048
+        peration: poweron
         service_type: vcd
         state: present
         catalog_name: Boxes

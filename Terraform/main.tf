@@ -9,13 +9,14 @@ provider "vcd" {
 }
 
 resource "vcd_vapp" "main" {
-  name          = "${var.env_name}"
-  network_name  = "${var.network_name}"
-  catalog_name  = "${var.catalog_name}"
-  template_name = "${var.template_name}"
-  memory        = 2048
-  cpus          = 2
-  ip            = "10.10.0.10"
+  name            = "${var.env_name}"
+  network_name    = "${var.network_name}"
+  catalog_name    = "${var.catalog_name}"
+  template_name   = "${var.template_name}"
+  storage_profile = "${var.vcd_strg_policy}"
+  memory          = 2048
+  cpus            = 2
+  ip              = "10.10.0.10"
 
   metadata {
     env     = "${var.env_name}"

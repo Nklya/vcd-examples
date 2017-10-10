@@ -23,6 +23,22 @@ variable "vcd_max_retry_timeout" {
   default     = 120
 }
 
+variable "vcd_strg_policy" {
+  description = "vCloud storage policy"
+}
+
+variable "catalog_name" {
+  description = "vCloud catalog name"
+}
+
+variable "template_name" {
+  description = "vCloud template name"
+}
+
+variable "network_name" {
+  description = "vCloud network name"
+}
+
 variable "vcd_allow_unverified_ssl" {
   description = "vCloud vcd_allow_unverified_ssl"
   default     = "true"
@@ -31,16 +47,4 @@ variable "vcd_allow_unverified_ssl" {
 variable "env_name" {
   description = "Env name"
   default     = "Env-01"
-}
-
-variable "catalog_name" {
-  default = "Boxes"
-}
-
-variable "network_name" {
-  default = "vcloud_default"
-}
-
-variable "template_name" {
-  default = "CENTOS-74"
 }

@@ -5,3 +5,11 @@ vcd_pass = "pass"
 vcd_org = "vms"
 
 vcd_url = "https://vcloud.host.com/api"
+
+vcd_strg_policy = "sata-datastore-policy"
+
+catalog_name = "Boxes"
+
+template_name = "CENTOS-74"
+
+network_name = "vcloud_default"
